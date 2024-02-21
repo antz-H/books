@@ -6,11 +6,12 @@ git add *
 echo\
 echo 2. Commit the changes to the local repository
 
-set now=%date:~0,10% %time%
+set commit_msg=Commit something
 set /p commit_msg=Enter your custom commit message (press Enter for default): 
 if "%commit_msg%"=="" (
-    echo "commit_msg:" %now%
-    git commit -m "%now%"
+
+    echo "commit_msg : %commit_msg%"
+    git commit -m "%commit_msg%"
 ) else (
     git commit -m "%commit_msg%"
 )
