@@ -7,8 +7,7 @@ echo\
 echo 2. Commit the changes to the local repository
 
 set now=%date:~0,10% %time%
-rem 提示输入提交信息
-set /p commit_msg="Enter your custom commit message (press Enter for default): "
+set /p commit_msg=Enter your custom commit message (press Enter for default): 
 echo 2.1
 if "%commit_msg%"=="" (
     echo 2.2
